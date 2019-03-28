@@ -1,48 +1,42 @@
     
-<div class="container">
-    <nav class="navbar navbar-default" role="navigation" style="background-image: linear-gradient(#F5F0F5, #E6DCBE);">
-        <div class="">
-    
+<div id="header">
+  <div class="container"> 
+    <!-- Header | Logo, Menu
+        ================================================== -->
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+    <div class="mainmenu">
+      <div id="mainmenu">
+        <ul class="sf-menu">
+          <li><a href="{% url 'home' %}" id="visited">Acasă</a></li>
 
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-               
-               
-            </div>
+          <li><a href="{% url 'restaurare_main' %}">Despre restaurare</a>
 
-           
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    
-                    <li>
-                        <a href="{% url 'home' %}" style="font-size: 16pt; font-family:cursive;">Acasă</a>
-                    </li>
+          <li><a href="{% url 'lemn' %}">lemn</a>
 
+          <li><a href="{% url 'piatra' %}">piatra</a>
 
-                    <li class="dropdown" id="parentCell" ><a class="dropdown-toggle" data-toggle="dropdown" style="font-size: 16pt; font-family:cursive;" href="#">Restaurare<span class="caret"></span></a>
-                       <ul class="dropdown-menu" style="border: 0px solid black; background-color: #E6DCBE;">
-                         <li>
-                            <a href="{% url 'lemn' %}" style="font-size: 16pt; font-family:cursive;">Lemn</a> 
-                         </li>
-                         <li>
-                            <a href="{% url 'piatra' %}" style="font-size: 16pt; font-family:cursive;">Piatră</a>
-                         </li>
-                       </ul>
-                    </li>
-
-
-                </ul>
-            </div>
-         
-
-
-        </div>     
-    </nav>
-
-
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <!-- mainmenu ends here --> 
+      
+      <!-- Responsive Menu -->
+      <form id="responsive-menu" action="#" method="post">
+        <select>
+          <option value="">Navigation</option>
+          <option value="index.html">Home</option>
+          <option value="about.html">About</option>
+          <option value="portfolio.html">Portfolio</option>
+          <option value="portfolioproject.html">Portfolio Project</option>
+          <option value="blog.html">Blog</option>
+          <option value="singleblog.html">Single Post</option>
+          <option value="features.html">Features</option>
+          <option value="contact.html">Contact</option>
+        </select>
+      </form>
+    </div>
+    <!-- mainmenu ends here --> 
+  </div>
+  <!-- container ends here --> 
 </div>
+<!-- header ends here --> 
