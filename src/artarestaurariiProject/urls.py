@@ -23,7 +23,7 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls'), name="home"),
-    path('restaurare', include('restaurare.urls'), name="restaurare"),
+    path('restaurare/', include('restaurare.urls'), name="restaurare"),
     path('markdown/', include( 'django_markdown.urls')),
 
 ] 
