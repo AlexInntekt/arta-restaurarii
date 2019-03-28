@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -49,12 +51,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'artarestaurarii.urls'
+ROOT_URLCONF = 'artarestaurariiProject.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+         'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -67,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'artarestaurarii.wsgi.application'
+WSGI_APPLICATION = 'artarestaurariiProject.wsgi.application'
 
 
 # Database
@@ -116,5 +118,17 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-
 STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'src/media')
+
+if DEBUG:
+    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
+    MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media")
+
+    STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, "static_dirs"),
+    )
+

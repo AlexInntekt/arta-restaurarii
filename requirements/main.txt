@@ -2,3 +2,5 @@ Django==2.0
 pytz==2018.9
 django-crispy-forms
 pillow
+markdown==2.6.11
+django-markdown-app==0.9.5

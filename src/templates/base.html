@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+  <head>
+
+   
+    <meta name="google-site-verification" content="7q2DLMMzewUhxNasU48qdL3Wvg8iYwTodd_nNOdcTX8" />
+
+    {% block metatags %} {% endblock metatags %}
+    
+    <title>
+      {% block title %} Arta Restaurării {% endblock title %}      
+    </title>
+    
+    {% include 'css_js.html' %}
+
+
+
+
+  </head>
+
+  <!-- we put the body tag in each template so we can assign IDs-->
+  {% block body %} {% endblock body %}
+
+    {% include 'banner.html' %}
+    {% include 'navbar.html' %}
+
+
+      {% block content %}  {% endblock content %}
+
+
+<!--   Bootstrap core JavaScript
+    ==================================================
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.min.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/selfpower.js"></script>
+    <script src="/static/js/alertbox.js"></script> -->
+    
+ 
+
+  </body>
+
+</html>
