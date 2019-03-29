@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'home',
     'restaurare',
+    'contact',
 ]
 
 MIDDLEWARE = [

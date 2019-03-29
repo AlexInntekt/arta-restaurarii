@@ -24,7 +24,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls'), name="home"),
     path('restaurare/', include('restaurare.urls'), name="restaurare"),
+    path('contact/', include('contact.urls')),
     path('markdown/', include( 'django_markdown.urls')),
+
 
 ] 
 
