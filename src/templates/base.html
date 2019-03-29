@@ -22,12 +22,13 @@
   <!-- we put the body tag in each template so we can assign IDs-->
   {% block body %} {% endblock body %}
 
-    {% include 'banner.html' %}
-    {% include 'navbar.html' %}
+  {% include 'banner.html' %}
+  {% include 'navbar.html' %}
 
 
-      {% block content %}  {% endblock content %}
+  {% block content %}  {% endblock content %}
 
+  {% include 'footer.html' %}
 
 <!--   Bootstrap core JavaScript
     ==================================================

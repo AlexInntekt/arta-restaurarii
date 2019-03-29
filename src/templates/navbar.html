@@ -23,15 +23,12 @@
       <!-- Responsive Menu -->
       <form id="responsive-menu" action="#" method="post">
         <select>
-          <option value="">Navigation</option>
-          <option value="index.html">Home</option>
-          <option value="about.html">About</option>
-          <option value="portfolio.html">Portfolio</option>
-          <option value="portfolioproject.html">Portfolio Project</option>
-          <option value="blog.html">Blog</option>
-          <option value="singleblog.html">Single Post</option>
-          <option value="features.html">Features</option>
-          <option value="contact.html">Contact</option>
+          <option value="">Navigație menu</option>
+          <option value="{% url 'restaurare_main' %}">Despre restaurare</option>
+          <option value="{% url 'home' %}">About</option>
+          <option value="{% url 'lemn' %}">Lemn</option>
+          <option value="{% url 'piatra' %}">Piatră</option>
+          <option value="{% url 'contact' %}">Contact</option>
         </select>
       </form>
     </div>
