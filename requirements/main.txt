@@ -4,3 +4,5 @@ django-crispy-forms
 pillow
 markdown==2.6.11
 django-markdown-app==0.9.5
+psycopg2-binary==2.8.2
+
