@@ -2,7 +2,7 @@
  
 
    
-{% load static %}
+{% load staticfiles %}
 
 {% block body %} <body id="home"> {% endblock body %}
 
@@ -14,8 +14,8 @@
 
 
 <div class="box-c">  
-
-
+<p>{% static 'images/w2.jpg' %}</p>
+<p>/Users/alex/repos/arta/src/static_dirs/images/w2.jpg</p>
 
         <div class="row">
                
@@ -25,6 +25,7 @@
 
                 <div class="col-md-3" style="">
                   <h3>Despre restaurare</h3>
+                  
                   <hr style="border-color: grey; width: 90%; margin-left: 10px;"> 
                   <hr style="border-color: grey; width: 90%; margin-left: 10px;"> <br>
                 </div>
