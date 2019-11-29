@@ -2,6 +2,9 @@ bin/
 lib/
 include/
 lib64/
+lib64
 *.pyc
 media/
 static/
+pyvenv.cfg
+share/
